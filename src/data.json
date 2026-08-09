@@ -1,0 +1,1412 @@
+[{
+    "id": "hudsons-guest-house",
+    "name": "Hudsons Guest House",
+    "rating": 3.9,
+    "reviewsCount": 114,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 683642",
+      "website": "https://hudsoninbrighton.co.uk"
+    },
+    "location": {
+      "address": "22 Devonshire Pl, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1QA",
+      "country": "United Kingdom",
+      "plusCode": "RVC9+PH Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "10:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "langford-hotel",
+    "name": "Langford Hotel",
+    "rating": 3.1,
+    "reviewsCount": 301,
+    "classification": "Hotel",
+    "contact": {
+      "phone": "+44 1273 003041",
+      "website": null
+    },
+    "location": {
+      "address": "1, Spice Planet, Third Ave, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 2EE",
+      "country": "United Kingdom",
+      "plusCode": "RRGH+9J Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "west-beach-hotel-brighton",
+    "name": "West Beach Hotel Brighton",
+    "rating": 3.8,
+    "reviewsCount": 574,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": null,
+      "website": "https://westbeachhotel.co.uk"
+    },
+    "location": {
+      "address": "135 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2HX",
+      "country": "United Kingdom",
+      "plusCode": "RRCX+R6 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-stirling-arms-pub-and-rooms",
+    "name": "The Stirling Arms Pub & Rooms",
+    "rating": 4.5,
+    "reviewsCount": 795,
+    "classification": "Pub",
+    "contact": {
+      "phone": "+44 1273 733134",
+      "website": "https://thestirlingarms.pub"
+    },
+    "location": {
+      "address": "3 Stirling Pl, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 3YU",
+      "country": "United Kingdom",
+      "plusCode": "RRJF+3G Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "holiday-inn-brighton-seafront",
+    "name": "Holiday Inn Brighton - Seafront by IHG",
+    "rating": 3.8,
+    "reviewsCount": 1836,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 333 320 9324",
+      "website": "https://ihg.com"
+    },
+    "location": {
+      "address": "137 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2JF",
+      "country": "United Kingdom",
+      "plusCode": "RRCX+X2 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "16:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "mercure-brighton-seafront-hotel",
+    "name": "Mercure Brighton Seafront Hotel",
+    "rating": 3.9,
+    "reviewsCount": 2329,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 351012",
+      "website": "https://all.accor.com"
+    },
+    "location": {
+      "address": "149 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2PP",
+      "country": "United Kingdom",
+      "plusCode": "RRFV+4V Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "albany-hotel-brighton-and-hove",
+    "name": "Albany Hotel, Brighton & Hove",
+    "rating": 3.3,
+    "reviewsCount": 234,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 964478",
+      "website": "https://albanyhotelhove.co.uk"
+    },
+    "location": {
+      "address": "19-23 The Drive, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 3JE",
+      "country": "United Kingdom",
+      "plusCode": "RRHJ+CR Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "mitre-hotel-brighton",
+    "name": "Mitre Hotel Brighton",
+    "rating": 3.3,
+    "reviewsCount": 14,
+    "classification": "Hotel",
+    "contact": {
+      "phone": "+44 1273 201840",
+      "website": "https://mitre-hotel.co.uk"
+    },
+    "location": {
+      "address": "150 Western Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2DA",
+      "country": "United Kingdom",
+      "plusCode": "RRFX+RW Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "best-western-princes-marine-hotel",
+    "name": "Best Western Princes Marine Hotel",
+    "rating": 4.2,
+    "reviewsCount": 847,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 333 003 4277",
+      "website": "https://bestwestern.co.uk"
+    },
+    "location": {
+      "address": "153 Kingsway, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 4GR",
+      "country": "United Kingdom",
+      "plusCode": "RRG9+C6 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:30",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "beach-hotel",
+    "name": "Beach Hotel",
+    "rating": 3.5,
+    "reviewsCount": 374,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": "+44 1273 323776",
+      "website": "https://beachotel.co.uk"
+    },
+    "location": {
+      "address": "1-4 Regency Square, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FG",
+      "country": "United Kingdom",
+      "plusCode": "RRCX+VG Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "hotel-pelirocco",
+    "name": "Hotel Pelirocco",
+    "rating": 4.8,
+    "reviewsCount": 905,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 327055",
+      "website": "https://hotelpelirocco.co.uk"
+    },
+    "location": {
+      "address": "10 Regency Square",
+      "city": "Brighton",
+      "postalCode": "BN1 2FG",
+      "country": "United Kingdom",
+      "plusCode": "RRFX+3H Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-southern-belle",
+    "name": "The Southern Belle",
+    "rating": 4.6,
+    "reviewsCount": 764,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 734806",
+      "website": "https://thesouthernbelle.co.uk"
+    },
+    "location": {
+      "address": "3 Waterloo St, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 1AQ",
+      "country": "United Kingdom",
+      "plusCode": "RRFV+93 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "regency-hotel-brighton-city-centre",
+    "name": "Regency Hotel Brighton City Centre",
+    "rating": 3.6,
+    "reviewsCount": 74,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 779922",
+      "website": "https://regencyhotelbrighton.com"
+    },
+    "location": {
+      "address": "28 Regency Square, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FH",
+      "country": "United Kingdom",
+      "plusCode": "RRFX+8R Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "02:00",
+      "checkOut": "10:30"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-queensbury-hotel",
+    "name": "The Queensbury Hotel",
+    "rating": 4.0,
+    "reviewsCount": 441,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": "+44 1273 325558",
+      "website": "https://queensburyhotelbrighton.com"
+    },
+    "location": {
+      "address": "58 Regency Square, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FF",
+      "country": "United Kingdom",
+      "plusCode": "RVF2+24 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  [
+  {
+    "id": "the-claremont",
+    "name": "The Claremont",
+    "rating": 4.4,
+    "reviewsCount": 144,
+    "classification": "5-star hotel",
+    "contact": {
+      "phone": "+44 1273 735161",
+      "website": "https://theclaremont.eu"
+    },
+    "location": {
+      "address": "13 Second Ave, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 2LL",
+      "country": "United Kingdom",
+      "plusCode": "RRGM+H8 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "13:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-gather-inn-brighton",
+    "name": "The Gather Inn - Brighton",
+    "rating": 4.0,
+    "reviewsCount": 802,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": "+44 1273 413402",
+      "website": "https://thegatherinn.co.uk"
+    },
+    "location": {
+      "address": "330 Kingsway, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN3 4LW",
+      "country": "United Kingdom",
+      "plusCode": "RQHX+9X Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "10:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-ginger-pig-restaurant-and-rooms",
+    "name": "The Ginger Pig - Restaurant & Rooms",
+    "rating": 4.5,
+    "reviewsCount": 1150,
+    "classification": "Gastropub",
+    "contact": {
+      "phone": "+44 1273 736123",
+      "website": "https://gingerpigbrighton.co.uk"
+    },
+    "location": {
+      "address": "3 Hove St, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 2TR",
+      "country": "United Kingdom",
+      "plusCode": "RRG9+FW Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "green-mews-2-brighton-and-hove",
+    "name": "Green Mews 2 Brighton & Hove",
+    "rating": 5.0,
+    "reviewsCount": 2,
+    "classification": "Guest house",
+    "contact": {
+      "phone": "+44 1273 917900",
+      "website": "https://mygetaways.co.uk"
+    },
+    "location": {
+      "address": "2 Hogarth Rd, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 5RG",
+      "country": "United Kingdom",
+      "plusCode": "RRM6+99 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "kira-beach-house",
+    "name": "KIRA Beach House",
+    "rating": 5.0,
+    "reviewsCount": 9,
+    "classification": "Guest house",
+    "contact": {
+      "phone": "+44 7496 698433",
+      "website": "https://bookltravel.com"
+    },
+    "location": {
+      "address": "273 Kingsway, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 4LJ",
+      "country": "United Kingdom",
+      "plusCode": "RRG3+XR Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": null
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "clifton-house",
+    "name": "Clifton House",
+    "rating": 4.3,
+    "reviewsCount": 45,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": "+44 7417 419427",
+      "website": "https://cliftonhousebrighton.com"
+    },
+    "location": {
+      "address": "299 Old Shoreham Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN41 1XS",
+      "country": "United Kingdom",
+      "plusCode": "RQQV+5M Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "blagdons-manor-hotel",
+    "name": "Blagdons Manor Hotel",
+    "rating": 3.6,
+    "reviewsCount": 27,
+    "classification": "Hotel",
+    "contact": {
+      "phone": "+44 1273 592508",
+      "website": "https://blagdonsmanor.co.uk"
+    },
+    "location": {
+      "address": "1 Southdown Rd, Southwick",
+      "city": "Brighton",
+      "postalCode": "BN42 4FT",
+      "country": "United Kingdom",
+      "plusCode": "RQP7+87 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": null,
+      "checkOut": null
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "west-beach-hotel-brighton",
+    "name": "West Beach Hotel Brighton",
+    "rating": 3.8,
+    "reviewsCount": 574,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": null,
+      "website": "https://westbeachhotel.co.uk"
+    },
+    "location": {
+      "address": "135 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2HX",
+      "country": "United Kingdom",
+      "plusCode": "RRCX+R6 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  
+  {
+    "id": "queens-hotel-brighton",
+    "name": "Queens Hotel Brighton",
+    "rating": 4.0,
+    "reviewsCount": 2429,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 321222",
+      "website": "https://queenshotelbrighton.com"
+    },
+    "location": {
+      "address": "1-3 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 1NS",
+      "country": "United Kingdom",
+      "plusCode": "RV96+W4 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  }
+],
+[
+  {
+    "id": "the-old-ship-hotel",
+    "name": "The Old Ship Hotel",
+    "rating": 3.9,
+    "reviewsCount": 2366,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 329001",
+      "website": "https://oldshipbrighton.co.uk"
+    },
+    "location": {
+      "address": "32-38 Kings Rd",
+      "city": "Brighton",
+      "postalCode": "BN1 1NR",
+      "country": "United Kingdom",
+      "plusCode": "RVC5+45 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-southern-belle",
+    "name": "The Southern Belle",
+    "rating": 4.6,
+    "reviewsCount": 764,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 734806",
+      "website": "https://thesouthernbelle.co.uk"
+    },
+    "location": {
+      "address": "3 Waterloo St, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 1AQ",
+      "country": "United Kingdom",
+      "plusCode": "RRFV+93 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "best-western-princes-marine-hotel",
+    "name": "Best Western Princes Marine Hotel",
+    "rating": 4.2,
+    "reviewsCount": 847,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 333 003 4277",
+      "website": "https://bestwestern.co.uk"
+    },
+    "location": {
+      "address": "153 Kingsway, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 4GR",
+      "country": "United Kingdom",
+      "plusCode": "RRG9+C6 Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:30",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "travelodge-brighton-seafront",
+    "name": "Travelodge Brighton Seafront",
+    "rating": 3.7,
+    "reviewsCount": 1939,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": null,
+      "website": "https://travelodge.co.uk"
+    },
+    "location": {
+      "address": "West St, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2RE",
+      "country": "United Kingdom",
+      "plusCode": "RVC4+H5 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "travelodge-brighton",
+    "name": "Travelodge Brighton",
+    "rating": 3.6,
+    "reviewsCount": 1057,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": null,
+      "website": "https://travelodge.co.uk"
+    },
+    "location": {
+      "address": "165-167 Preston Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 6AU",
+      "country": "United Kingdom",
+      "plusCode": "RVQ3+46 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "harbour-hotel-brighton",
+    "name": "Harbour Hotel Brighton",
+    "rating": 4.0,
+    "reviewsCount": 1418,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 323221",
+      "website": "https://harbourhotels.co.uk"
+    },
+    "location": {
+      "address": "64 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 1NA",
+      "country": "United Kingdom",
+      "plusCode": "RVC4+77 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "leonardo-hotel-brighton",
+    "name": "Leonardo Hotel Brighton - Brighton City Centre",
+    "rating": 4.2,
+    "reviewsCount": 2506,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 862121",
+      "website": "https://leonardo-hotels.com"
+    },
+    "location": {
+      "address": "101 Stroudley Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 4DJ",
+      "country": "United Kingdom",
+      "plusCode": "RVJ5+JV Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "malmaison-brighton",
+    "name": "Malmaison Brighton",
+    "rating": 4.3,
+    "reviewsCount": 1428,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 041482",
+      "website": "https://malmaison.com"
+    },
+    "location": {
+      "address": "The Waterfront, Brighton Marina, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 5WA",
+      "country": "United Kingdom",
+      "plusCode": "RV7X+24 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-ginger-pig",
+    "name": "The Ginger Pig - Restaurant & Rooms",
+    "rating": 4.5,
+    "reviewsCount": 1150,
+    "classification": "Gastropub",
+    "contact": {
+      "phone": "+44 1273 736123",
+      "website": "https://gingerpigbrighton.co.uk"
+    },
+    "location": {
+      "address": "3 Hove St, Brighton and Hove",
+      "city": "Hove",
+      "postalCode": "BN3 2TR",
+      "country": "United Kingdom",
+      "plusCode": "RRG9+FW Hove, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "staybridge-suites-brighton",
+    "name": "Staybridge Suites Brighton by IHG",
+    "rating": 4.5,
+    "reviewsCount": 312,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 468805",
+      "website": "https://ihg.com"
+    },
+    "location": {
+      "address": "1 Fleet St, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 4BF",
+      "country": "United Kingdom",
+      "plusCode": "RVJ6+37 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "premier-inn-brighton-city-centre",
+    "name": "Premier Inn Brighton City Centre (North Street) hotel",
+    "rating": 3.9,
+    "reviewsCount": 2229,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 333 777 3947",
+      "website": "https://premierinn.com"
+    },
+    "location": {
+      "address": "144 North St, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 1RE",
+      "country": "United Kingdom",
+      "plusCode": "RVF5+8C Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "ambassador-hotel",
+    "name": "Ambassador Hotel",
+    "rating": 3.3,
+    "reviewsCount": 292,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 676869",
+      "website": "https://theambassadorhotel.co.uk"
+    },
+    "location": {
+      "address": "22-23 New Steine, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1PD",
+      "country": "United Kingdom",
+      "plusCode": "RVC9+2F Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:30"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "ibis-brighton-city-centre",
+    "name": "ibis Brighton City Centre - Station",
+    "rating": 4.2,
+    "reviewsCount": 2127,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 201000",
+      "website": "https://all.accor.com"
+    },
+    "location": {
+      "address": "88-92 Queens Rd, East Sussex, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 3XE",
+      "country": "United Kingdom",
+      "plusCode": "RVH5+4F Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-joy",
+    "name": "INNit Joy",
+    "rating": 4.1,
+    "reviewsCount": 242,
+    "classification": "Guest house",
+    "contact": {
+      "phone": "+44 7401 227187",
+      "website": "https://innitrooms.com"
+    },
+    "location": {
+      "address": "44 Russell Square, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2EF",
+      "country": "United Kingdom",
+      "plusCode": "RVF2+4R Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "ao-brighton-palace-pier",
+    "name": "a&o Brighton Palace Pier",
+    "rating": 4.1,
+    "reviewsCount": 1017,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": null,
+      "website": "https://aohostels.com"
+    },
+    "location": {
+      "address": "41-42 Old Steine, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 1NH",
+      "country": "United Kingdom",
+      "plusCode": "RVC6+4R Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "10:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-cavalaire",
+    "name": "INNit Cavalaire",
+    "rating": 4.5,
+    "reviewsCount": 201,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 7401 224410",
+      "website": "https://hotels.cloudbeds.com"
+    },
+    "location": {
+      "address": "34 Upper Rock Gardens, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1QF",
+      "country": "United Kingdom",
+      "plusCode": "RVCC+H7 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-bliss",
+    "name": "INNit Bliss",
+    "rating": 3.0,
+    "reviewsCount": 25,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 7401 228046",
+      "website": "https://innitrooms.com"
+    },
+    "location": {
+      "address": "46 Upper Rock Gardens, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1QF",
+      "country": "United Kingdom",
+      "plusCode": "RVCC+85 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": null,
+      "checkOut": null
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "doubletree-by-hilton-brighton-metropole",
+    "name": "DoubleTree by Hilton Brighton Metropole",
+    "rating": 4.3,
+    "reviewsCount": 958,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 775432",
+      "website": "https://hilton.com"
+    },
+    "location": {
+      "address": "Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FU",
+      "country": "United Kingdom",
+      "plusCode": "RVC2+JF Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "16:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-blue-sky",
+    "name": "INNit Blue Sky",
+    "rating": 3.9,
+    "reviewsCount": 48,
+    "classification": "Hotel",
+    "contact": {
+      "phone": "+44 7401 224410",
+      "website": "https://innitrooms.com"
+    },
+    "location": {
+      "address": "2 Atlingworth St, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1PL",
+      "country": "United Kingdom",
+      "plusCode": "RV9C+P4 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  }
+],
+[
+  {
+    "id": "maldron-hotel-brighton-city-centre",
+    "name": "Maldron Hotel Brighton City Centre",
+    "rating": 4.6,
+    "reviewsCount": 856,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 435105",
+      "website": "https://ad.doubleclick.net"
+    },
+    "location": {
+      "address": "31 Cannon Pl, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FB",
+      "country": "United Kingdom",
+      "plusCode": "RVC2+WR Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-madeira",
+    "name": "INNit Madeira",
+    "rating": 4.1,
+    "reviewsCount": 85,
+    "classification": "2-star hotel",
+    "contact": {
+      "phone": "+44 7360 277100",
+      "website": "https://innitrooms.com"
+    },
+    "location": {
+      "address": "9 Madeira Pl, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1TN",
+      "country": "United Kingdom",
+      "plusCode": "RVC8+57 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "innit-marina",
+    "name": "INNit Marina",
+    "rating": 4.5,
+    "reviewsCount": 152,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 7401 224410",
+      "website": "https://innitrooms.com"
+    },
+    "location": {
+      "address": "8 Charlotte St, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1AG",
+      "country": "United Kingdom",
+      "plusCode": "RV9C+PV Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:30",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "amherst-brighton",
+    "name": "Amherst Brighton",
+    "rating": 3.3,
+    "reviewsCount": 85,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 1273 670131",
+      "website": "https://amherstbrighton.co.uk"
+    },
+    "location": {
+      "address": "2 Lower Rock Gardens, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1PG",
+      "country": "United Kingdom",
+      "plusCode": "RV99+RQ Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "the-grand-brighton",
+    "name": "The Grand Brighton",
+    "rating": 4.4,
+    "reviewsCount": 4388,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 224300",
+      "website": "https://grandbrighton.co.uk"
+    },
+    "location": {
+      "address": "97-99 Kings Rd, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN1 2FW",
+      "country": "United Kingdom",
+      "plusCode": "RVC3+J2 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "16:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "white-house-brighton",
+    "name": "White House Brighton",
+    "rating": 4.5,
+    "reviewsCount": 162,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 626266",
+      "website": "https://whitehousebrighton.com"
+    },
+    "location": {
+      "address": "6 Bedford St, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1AN",
+      "country": "United Kingdom",
+      "plusCode": "RV9F+M6 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "studio-room-in-brighton-city-centre",
+    "name": "Studio room in Brighton city centre",
+    "rating": null,
+    "reviewsCount": null,
+    "classification": "Self-catering accommodation",
+    "contact": {
+      "phone": "+44 7776 175175",
+      "website": "https://brightonrooms.uk"
+    },
+    "location": {
+      "address": "23 New Steine, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1PD",
+      "country": "United Kingdom",
+      "plusCode": "RVC9+2F Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": null
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "brighton-inn-boutique-guest-accommodation",
+    "name": "Brighton Inn Boutique Guest Accommodation",
+    "rating": 4.3,
+    "reviewsCount": 233,
+    "classification": "4-star hotel",
+    "contact": {
+      "phone": "+44 1273 044306",
+      "website": "https://brightoninn.co.uk"
+    },
+    "location": {
+      "address": "20 St George's Terrace, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1JH",
+      "country": "United Kingdom",
+      "plusCode": "RV9G+V5 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "14:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "hamptons-brighton",
+    "name": "Hamptons Brighton",
+    "rating": 3.6,
+    "reviewsCount": 147,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 7312 098151",
+      "website": "https://hamptonsbrighton.com"
+    },
+    "location": {
+      "address": "3 New Steine, Kemptown, Brighton and Hove",
+      "city": "Brighton",
+      "postalCode": "BN2 1PB",
+      "country": "United Kingdom",
+      "plusCode": "RV99+V5 Brighton, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "16:00",
+      "checkOut": "11:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  },
+  {
+    "id": "premier-inn-worthing-seafront-hotel",
+    "name": "Premier Inn Worthing Seafront hotel",
+    "rating": 4.1,
+    "reviewsCount": 1219,
+    "classification": "3-star hotel",
+    "contact": {
+      "phone": "+44 333 321 9369",
+      "website": "https://premierinn.com"
+    },
+    "location": {
+      "address": "127 Marine Parade",
+      "city": "Worthing",
+      "postalCode": "BN11 3FN",
+      "country": "United Kingdom",
+      "plusCode": "RJ59+78 Worthing, United Kingdom"
+    },
+    "policies": {
+      "checkIn": "15:00",
+      "checkOut": "12:00"
+    },
+    "businessFeatures": [
+      "Corporate Friendly",
+      "Extended Stays",
+      "Professional Environment"
+    ]
+  }
+]
+]
