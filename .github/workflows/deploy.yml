@@ -1,0 +1,44 @@
+name: Deploy Website to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # الروبوت سيعمل فقط عند رفع كود جديد على هذا الفرع
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # إعطاء صلاحية للروبوت للكتابة ورفع الملفات
+
+    steps:
+      - name: Checkout Code 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24" # استخدام أحدث نسخة مستقرة لضمان عدم حدوث تحذيرات
+
+      - name: Install Dependencies 📦
+        run: npm install --legacy-peer-deps
+
+      - name: Build Project 🏗️
+        run: |
+          npm run build
+
+          # 🌟 خدعة الـ SPA الأساسية لـ GitHub Pages لكي لا يظهر خطأ 404 عند التحديث
+          cp dist/index.html dist/404.html
+
+          # 🌟 خدعة الـ SEO: إنشاء مجلدات حقيقية تتطابق تماماً مع مسارات App.jsx
+          mkdir -p dist/catalog dist/contact
+
+          # نسخ ملف React الأساسي داخل هذه المجلدات لكي يعيد غيت هاب الرمز 200 OK لمحركات البحث
+          cp dist/index.html dist/catalog/index.html
+          cp dist/index.html dist/contact/index.html
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # المجلد الذي يتم توليده بعد البناء في Vite
