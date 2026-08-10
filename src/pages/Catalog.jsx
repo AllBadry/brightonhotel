@@ -5,7 +5,9 @@ import { ReactLenis } from 'lenis/react';
 import rawHotelsData from '../data.json'; // تأكد أن اسم الملف هو data.json كما في كودك أو hotels.json
 import HotelCard from '../components/HotelCard';
 
-const hotelsData = rawHotelsData.flat();
+const hotelsData = rawHotelsData.flat().filter((h, i, arr) =>
+  arr.findIndex((x) => x.id === h.id) === i
+);
 
 // --- تصنيف العقارات حسب نوع الخاصية ---
 const getCategory = (classification) => {
@@ -107,9 +109,9 @@ export default function Catalog() {
                 onChange={(e) => setSortBy(e.target.value)}
                 className="bg-white border border-gray-200 text-gray-700 py-2.5 px-6 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-terracotta/50 appearance-none cursor-pointer font-medium text-sm"
               >
-                <option>Sort by: Recommended</option>
-                <option>Highest Rating</option>
-                <option>Most Reviewed</option>
+                <option value="Recommended">Sort by: Recommended</option>
+                <option value="Highest Rating">Highest Rating</option>
+                <option value="Most Reviewed">Most Reviewed</option>
               </select>
             </div>
             
