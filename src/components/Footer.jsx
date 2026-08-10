@@ -44,14 +44,6 @@ export default function Footer() {
             <p className="text-sage-light text-lg font-light leading-relaxed max-w-sm mb-8">
               The premier directory for corporate travel, remote working, and seamless extended residencies on the Sussex coast.
             </p>
-            <div className="flex gap-4">
-              {/* أيقونات تواصل اجتماعي وهمية بتصميم بسيط */}
-              {['LinkedIn', 'Twitter', 'Instagram'].map((social, idx) => (
-                <a key={idx} href="#" className="text-sm font-medium uppercase tracking-widest text-white hover:text-terracotta transition-colors">
-                  {social}
-                </a>
-              ))}
-            </div>
           </motion.div>
 
           {/* العمود الثاني: الروابط السريعة */}
@@ -61,7 +53,7 @@ export default function Footer() {
               <li><Link to="/catalog" className="text-sage-light hover:text-white transition-colors">All Properties</Link></li>
               <li><Link to="/catalog" className="text-sage-light hover:text-white transition-colors">Executive Hotels</Link></li>
               <li><Link to="/catalog" className="text-sage-light hover:text-white transition-colors">Serviced Apartments</Link></li>
-              <li><a href="#" className="text-sage-light hover:text-white transition-colors">Coworking Spaces</a></li>
+              <li><Link to="/catalog" className="text-sage-light hover:text-white transition-colors">Coworking Spaces</Link></li>
             </ul>
           </motion.div>
 
@@ -69,10 +61,10 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="md:col-span-2">
             <h4 className="text-terracotta uppercase tracking-[0.2em] text-xs font-bold mb-6">Corporate</h4>
             <ul className="flex flex-col gap-4">
-              <li><a href="#contact" className="text-sage-light hover:text-white transition-colors">Group Bookings</a></li>
-              <li><a href="#contact" className="text-sage-light hover:text-white transition-colors">Extended Stays</a></li>
-              <li><a href="#" className="text-sage-light hover:text-white transition-colors">Company Retreats</a></li>
-              <li><a href="#" className="text-sage-light hover:text-white transition-colors">Concierge Desk</a></li>
+              <li><Link to="/contact" className="text-sage-light hover:text-white transition-colors">Group Bookings</Link></li>
+              <li><Link to="/contact" className="text-sage-light hover:text-white transition-colors">Extended Stays</Link></li>
+              <li><Link to="/contact" className="text-sage-light hover:text-white transition-colors">Company Retreats</Link></li>
+              <li><Link to="/contact" className="text-sage-light hover:text-white transition-colors">Concierge Desk</Link></li>
             </ul>
           </motion.div>
 
@@ -95,9 +87,9 @@ export default function Footer() {
         >
           <p>&copy; {currentYear} Brighton WorkStays. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Settings</a>
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/cookies" className="hover:text-white transition-colors">Cookie Settings</Link>
           </div>
         </motion.div>
       </motion.div>

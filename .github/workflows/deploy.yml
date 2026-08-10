@@ -31,11 +31,14 @@ jobs:
           cp dist/index.html dist/404.html
 
           # 🌟 خدعة الـ SEO: إنشاء مجلدات حقيقية تتطابق تماماً مع مسارات App.jsx
-          mkdir -p dist/catalog dist/contact
+          mkdir -p dist/catalog dist/contact dist/privacy dist/terms dist/cookies
 
           # نسخ ملف React الأساسي داخل هذه المجلدات لكي يعيد غيت هاب الرمز 200 OK لمحركات البحث
           cp dist/index.html dist/catalog/index.html
           cp dist/index.html dist/contact/index.html
+          cp dist/index.html dist/privacy/index.html
+          cp dist/index.html dist/terms/index.html
+          cp dist/index.html dist/cookies/index.html
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
