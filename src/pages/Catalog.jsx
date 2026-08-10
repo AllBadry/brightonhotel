@@ -1,11 +1,23 @@
 // src/pages/Catalog.jsx
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ReactLenis } from 'lenis/react';
 import rawHotelsData from '../data.json'; // تأكد أن اسم الملف هو data.json كما في كودك أو hotels.json
 import HotelCard from '../components/HotelCard';
 
 const hotelsData = rawHotelsData.flat();
+
+// --- تصنيف العقارات حسب نوع الخاصية ---
+const getCategory = (classification) => {
+  const c = (classification || '').toLowerCase();
+  if (c.includes('hotel')) return 'Hotels';
+  if (c.includes('guest house')) return 'Guest Houses';
+  if (c.includes('pub')) return 'Pubs & Gastropubs';
+  if (c.includes('self-catering')) return 'Self-Catering';
+  return 'Other';
+};
+
+const categories = ['All Properties', ...new Set(hotelsData.map((h) => getCategory(h.classification)))];
 
 // --- إعدادات الحركات الناعمة ---
 const fadeUp = {
@@ -26,6 +38,28 @@ const staggerContainer = {
 };
 
 export default function Catalog() {
+  const [typeFilter, setTypeFilter] = useState('All Properties');
+  const [sortBy, setSortBy] = useState('Recommended');
+
+  const visibleHotels = useMemo(() => {
+    let list = hotelsData.filter((h) => 
+      typeFilter === 'All Properties' || getCategory(h.classification) === typeFilter
+    );
+
+    switch (sortBy) {
+      case 'Highest Rating':
+        list = [...list].sort((a, b) => (b.rating ?? -Infinity) - (a.rating ?? -Infinity));
+        break;
+      case 'Most Reviewed':
+        list = [...list].sort((a, b) => (b.reviewsCount ?? -Infinity) - (a.reviewsCount ?? -Infinity));
+        break;
+      default:
+        list = [...list];
+    }
+
+    return list;
+  }, [typeFilter, sortBy]);
+
   return (
     <ReactLenis root>
       <div dir="ltr" className="bg-warm min-h-screen font-sans text-sage pb-32">
@@ -45,12 +79,12 @@ export default function Catalog() {
               Directory.
             </motion.h1>
             <motion.p variants={fadeUp} className="text-xl text-gray-600 font-light leading-relaxed">
-              Showing <span className="font-semibold text-sage">{hotelsData.length}</span> curated properties in Brighton & Hove. Handpicked for professionals, remote workers, and extended corporate residencies.
+              Showing <span className="font-semibold text-sage">{visibleHotels.length}</span> curated properties in Brighton & Hove. Handpicked for professionals, remote workers, and extended corporate residencies.
             </motion.p>
           </motion.div>
         </section>
 
-        {/* 2. Interactive Filter Bar (Visual) */}
+        {/* 2. Interactive Filter Bar */}
         <section className="py-8 px-8 md:px-16 max-w-7xl mx-auto sticky top-0 z-40 bg-warm/90 backdrop-blur-md border-b border-sage/5 mb-12">
           <motion.div 
             initial={{ opacity: 0, y: -10 }} 
@@ -59,12 +93,20 @@ export default function Catalog() {
             className="flex flex-col md:flex-row justify-between items-center gap-4"
           >
             <div className="flex gap-4 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
-              <select className="bg-white border border-gray-200 text-gray-700 py-2.5 px-6 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-terracotta/50 appearance-none cursor-pointer font-medium text-sm">
-                <option>All Properties</option>
-                <option>Hotels</option>
-                <option>Serviced Apartments</option>
+              <select
+                value={typeFilter}
+                onChange={(e) => setTypeFilter(e.target.value)}
+                className="bg-white border border-gray-200 text-gray-700 py-2.5 px-6 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-terracotta/50 appearance-none cursor-pointer font-medium text-sm"
+              >
+                {categories.map((cat) => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
               </select>
-              <select className="bg-white border border-gray-200 text-gray-700 py-2.5 px-6 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-terracotta/50 appearance-none cursor-pointer font-medium text-sm">
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="bg-white border border-gray-200 text-gray-700 py-2.5 px-6 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-terracotta/50 appearance-none cursor-pointer font-medium text-sm"
+              >
                 <option>Sort by: Recommended</option>
                 <option>Highest Rating</option>
                 <option>Most Reviewed</option>
@@ -79,22 +121,33 @@ export default function Catalog() {
 
         {/* 3. Scrolling Catalog List */}
         <main className="max-w-6xl mx-auto px-8 md:px-4">
-          <div className="flex flex-col gap-10">
-            {hotelsData.map((hotel, index) => (
-              <motion.div
-                key={hotel.id || index}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }} // يبدأ الظهور قبل وصول العنصر لمنتصف الشاشة بقليل
-                variants={fadeUp}
-                whileHover={{ scale: 1.01, y: -4 }} // تأثير فيزيائي عند مرور الماوس
-                transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                className="transition-shadow hover:shadow-2xl rounded-2xl bg-white border border-gray-100"
-              >
-                <HotelCard hotel={hotel} />
-              </motion.div>
-            ))}
-          </div>
+          {visibleHotels.length === 0 ? (
+            <motion.p
+              initial="hidden"
+              animate="visible"
+              variants={fadeUp}
+              className="text-center text-xl text-gray-500 py-20"
+            >
+              No properties match this filter.
+            </motion.p>
+          ) : (
+            <div className="flex flex-col gap-10">
+              {visibleHotels.map((hotel, index) => (
+                <motion.div
+                  key={hotel.id || index}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-50px" }} // يبدأ الظهور قبل وصول العنصر لمنتصف الشاشة بقليل
+                  variants={fadeUp}
+                  whileHover={{ scale: 1.01, y: -4 }} // تأثير فيزيائي عند مرور الماوس
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  className="transition-shadow hover:shadow-2xl rounded-2xl bg-white border border-gray-100"
+                >
+                  <HotelCard hotel={hotel} />
+                </motion.div>
+              ))}
+            </div>
+          )}
         </main>
 
       </div>
