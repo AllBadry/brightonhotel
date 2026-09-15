@@ -185,7 +185,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20">
             <ParallaxSection speed={0.18} className="w-full md:w-1/2">
               <ImageReveal
-                src="https://images.unsplash.com/photo-1582200237199-3171120042da?auto=format&fit=crop&w=1920&q=80"
+                src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1920&q=80"
                 alt="Brighton Architecture"
                 className="overflow-hidden rounded-2xl h-[45vh] sm:h-[55vh] md:h-[72vh]"
                 imgClassName="w-full h-full object-cover"

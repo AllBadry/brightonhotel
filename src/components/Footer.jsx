@@ -58,10 +58,10 @@ export default function Footer() {
         />
 
         {/* الشبكة الرئيسية للفوتر */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6 mb-20">
 
-          {/* العمود الأول: الشعار والنبذة (يأخذ مساحة أكبر) */}
-          <motion.div variants={itemVariants} className="md:col-span-5">
+          {/* العمود الأول: الشعار والنبذة */}
+          <motion.div variants={itemVariants} className="md:col-span-4">
             <Link to="/" className="text-3xl font-serif font-bold text-white mb-6 inline-block group">
               Brighton <span className="text-terracotta italic font-light group-hover:text-gold transition-colors">Work</span>Stays.
             </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
           </motion.div>
 
           {/* العمود الثاني: الروابط السريعة */}
-          <motion.div variants={itemVariants} className="md:col-span-2 md:col-start-7">
+          <motion.div variants={itemVariants} className="md:col-span-2">
             <h4 className="text-terracotta uppercase tracking-[0.2em] text-xs font-bold mb-6">Directory</h4>
             <ul className="flex flex-col gap-4">
               <li><Link to="/catalog" className="text-sage-light hover:text-white transition-colors">All Properties</Link></li>
@@ -81,7 +81,18 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* العمود الثالث: خدمات الشركات */}
+          {/* العمود الثالث: الشركة */}
+          <motion.div variants={itemVariants} className="md:col-span-2">
+            <h4 className="text-terracotta uppercase tracking-[0.2em] text-xs font-bold mb-6">Company</h4>
+            <ul className="flex flex-col gap-4">
+              <li><Link to="/about" className="text-sage-light hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/journal" className="text-sage-light hover:text-white transition-colors">Journal</Link></li>
+              <li><Link to="/faq" className="text-sage-light hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link to="/contact" className="text-sage-light hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </motion.div>
+
+          {/* العمود الرابع: خدمات الشركات */}
           <motion.div variants={itemVariants} className="md:col-span-2">
             <h4 className="text-terracotta uppercase tracking-[0.2em] text-xs font-bold mb-6">Corporate</h4>
             <ul className="flex flex-col gap-4">
@@ -92,7 +103,7 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          {/* العمود الرابع: معلومات التواصل */}
+          {/* العمود الخامس: معلومات التواصل */}
           <motion.div variants={itemVariants} className="md:col-span-2">
             <h4 className="text-terracotta uppercase tracking-[0.2em] text-xs font-bold mb-6">Contact</h4>
             <ul className="flex flex-col gap-4">

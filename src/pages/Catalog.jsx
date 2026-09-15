@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ReactLenis } from 'lenis/react';
 import rawHotelsData from '../data.json';
 import HotelCard from '../components/HotelCard';
+import { getCategoryByClassification } from '../utils/hotelImages';
 
 const ease = [0.16, 1, 0.3, 1];
 
@@ -11,15 +12,7 @@ const hotelsData = rawHotelsData.flat().filter((h, i, arr) =>
   arr.findIndex((x) => x.id === h.id) === i
 );
 
-// --- تصنيف العقارات حسب نوع الخاصية ---
-const getCategory = (classification) => {
-  const c = (classification || '').toLowerCase();
-  if (c.includes('hotel')) return 'Hotels';
-  if (c.includes('guest house')) return 'Guest Houses';
-  if (c.includes('pub')) return 'Pubs & Gastropubs';
-  if (c.includes('self-catering')) return 'Self-Catering';
-  return 'Other';
-};
+const getCategory = getCategoryByClassification;
 
 const categories = ['All Properties', ...new Set(hotelsData.map((h) => getCategory(h.classification)))];
 

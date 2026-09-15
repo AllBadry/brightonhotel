@@ -1,5 +1,7 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { getHotelImage } from '../utils/hotelImages';
 
 export default function HotelCard({ hotel }) {
   const cardRef = useRef(null);
@@ -23,7 +25,7 @@ export default function HotelCard({ hotel }) {
     my.set(0);
   };
 
-  const defaultImage = "https://images.unsplash.com/photo-1551882547-ff40c0d5bf8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+  const imageSrc = getHotelImage(hotel);
 
   return (
     <div
@@ -33,12 +35,14 @@ export default function HotelCard({ hotel }) {
       className="group relative bg-warm-card rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row overflow-hidden hover:shadow-md transition duration-300 w-full text-left"
       dir="ltr"
     >
-      <span className="absolute top-0 left-0 h-[2px] w-0 bg-gradient-to-r from-terracotta to-gold group-hover:w-full transition-all duration-700 ease-out z-10" />
+      <span className="absolute top-0 left-0 h-[2px] w-0 bg-gradient-to-r from-terracotta to-gold group-hover:w-full transition-all duration-700 ease-out z-30" />
+
+      <Link to={`/property/${hotel.id}`} className="absolute inset-0 z-10" onClick={(e) => e.stopPropagation()} aria-label={`View ${hotel.name} details`} />
 
       {/* قسم الصورة */}
       <div className="md:w-1/3 h-56 md:h-auto relative overflow-hidden">
         <motion.img
-          src={defaultImage}
+          src={imageSrc}
           alt={hotel.name}
           style={{ x: imgX, y: imgY }}
           initial={{ scale: 1.1 }}
@@ -99,14 +103,15 @@ export default function HotelCard({ hotel }) {
               href={hotel.contact.website}
               target="_blank"
               rel="noreferrer"
-              className="bg-sage hover:bg-sage-light text-white px-6 py-2.5 rounded-lg font-medium transition shadow-sm group-hover:bg-terracotta"
+              onClick={(e) => e.stopPropagation()}
+              className="relative z-20 bg-sage hover:bg-sage-light text-white px-6 py-2.5 rounded-lg font-medium transition shadow-sm group-hover:bg-terracotta"
             >
               Visit Website
             </a>
           ) : (
-            <button className="bg-gray-300 text-gray-500 px-6 py-2.5 rounded-lg font-medium cursor-not-allowed">
+            <span className="relative z-20 bg-gray-300 text-gray-500 px-6 py-2.5 rounded-lg font-medium cursor-not-allowed">
               No Website
-            </button>
+            </span>
           )}
         </div>
       </div>
