@@ -87,7 +87,7 @@ export default function About() {
           <motion.div
             className="absolute inset-0 will-change-transform"
             style={{
-              backgroundImage: "url('/images/about-hero.jpg')",
+              backgroundImage: "url('/images/i4.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               y: heroY,
