@@ -87,7 +87,7 @@ export default function About() {
           <motion.div
             className="absolute inset-0 will-change-transform"
             style={{
-              backgroundImage: "url('/images/i4.jpg')",
+              backgroundImage: "url('/images/luxury-suite.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               y: heroY,
@@ -129,8 +129,8 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2">
               <ImageReveal
-                src="/images/team-meeting.jpg"
-                alt="Our team collaborating"
+                src="/images/office-focus.jpg"
+                alt="A focused workspace"
                 className="overflow-hidden rounded-2xl h-[50vh] md:h-[60vh]"
                 imgClassName="w-full h-full object-cover"
               />
