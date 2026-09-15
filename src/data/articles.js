@@ -6,7 +6,7 @@ export const articles = [
     category: 'Work & Travel',
     date: '12 August 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/coast-beach.jpg',
     featured: true,
   },
   {
@@ -16,7 +16,7 @@ export const articles = [
     category: 'Brighton Life',
     date: '28 July 2026',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/brighton-street.jpg',
     featured: false,
   },
   {
@@ -26,7 +26,7 @@ export const articles = [
     category: 'Staying',
     date: '15 July 2026',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/lake-vista.jpg',
     featured: false,
   },
   {
@@ -36,7 +36,7 @@ export const articles = [
     category: 'Brighton Life',
     date: '2 July 2026',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/spa-pool.jpg',
     featured: false,
   },
   {
@@ -46,7 +46,7 @@ export const articles = [
     category: 'Staying',
     date: '18 June 2026',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1515524738708-327f6b0037a7?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/resort-terrace.jpg',
     featured: false,
   },
   {
@@ -56,7 +56,7 @@ export const articles = [
     category: 'Work & Travel',
     date: '5 June 2026',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/beach-chairs.jpg',
     featured: false,
   },
 ];

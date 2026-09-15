@@ -109,7 +109,6 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="text-sage-light">Brighton & Hove,<br />East Sussex, UK</li>
               <li><a href="mailto:contact@brightonhotel.co.uk" className="text-white font-medium hover:text-terracotta transition-colors">contact@brightonhotel.co.uk</a></li>
-              <li><a href="tel:+441273000000" className="text-sage-light hover:text-white transition-colors">+44 (0) 1273 000 000</a></li>
             </ul>
           </motion.div>
 

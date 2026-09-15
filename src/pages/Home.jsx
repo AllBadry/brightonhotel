@@ -23,27 +23,27 @@ const introParagraph =
 
 const gallerySlides = [
   {
-    src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/hotel-pool.jpg',
     caption: 'Sunlit suites above the Lanes',
     tag: 'Hotels',
   },
   {
-    src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/resort-pool.jpg',
     caption: 'Boardrooms with a sea view',
     tag: 'Corporate',
   },
   {
-    src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/hotel-room.jpg',
     caption: 'Mornings on the terrace',
     tag: 'Apartments',
   },
   {
-    src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/luxury-suite.jpg',
     caption: 'Quiet corners to reset',
     tag: 'Wellness',
   },
   {
-    src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/suite-ready.jpg',
     caption: 'A lobby that feels like home',
     tag: 'Retreats',
   },
@@ -77,7 +77,7 @@ export default function Home() {
           <motion.div
             className="absolute inset-0 will-change-transform"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=1920&q=80')",
+              backgroundImage: "url('/images/hero-hotel.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               y: heroBgY,
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
             <ParallaxSection speed={0.18} className="w-full md:w-1/2">
               <ImageReveal
-                src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1920&q=80"
+                src="/images/executive-room.jpg"
                 alt="Executive Room"
                 className="overflow-hidden rounded-2xl h-[45vh] sm:h-[55vh] md:h-[72vh]"
                 imgClassName="w-full h-full object-cover"
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-20">
             <ParallaxSection speed={0.18} className="w-full md:w-1/2">
               <ImageReveal
-                src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1920&q=80"
+                src="/images/beach-chairs.jpg"
                 alt="Brighton Architecture"
                 className="overflow-hidden rounded-2xl h-[45vh] sm:h-[55vh] md:h-[72vh]"
                 imgClassName="w-full h-full object-cover"
@@ -227,7 +227,7 @@ export default function Home() {
               transition={{ duration: 1.4, ease }}
               className="w-24 h-[4rem] sm:w-32 sm:h-[6rem] md:w-64 md:h-[12rem] rounded-full overflow-hidden mx-4 md:mx-8 inline-block align-middle transform -translate-y-2 sm:-translate-y-4 md:-translate-y-8 animate-float"
             >
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" className="w-full h-full object-cover" alt="Focus" />
+              <img src="/images/office-focus.jpg" className="w-full h-full object-cover" alt="Focus" />
             </motion.div>
             <h2 className="text-[4rem] sm:text-[6rem] md:text-[12rem] font-serif font-light tracking-tighter mx-4 md:mx-8 text-terracotta italic">Coastal Calm</h2>
             <h2 className="text-[4rem] sm:text-[6rem] md:text-[12rem] font-serif font-light tracking-tighter mx-4 md:mx-8">Pure Focus</h2>

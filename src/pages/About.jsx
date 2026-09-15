@@ -57,17 +57,17 @@ const team = [
   {
     name: 'James Whitmore',
     role: 'Founder & Managing Director',
-    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80',
+    img: '/images/team-james.jpg',
   },
   {
     name: 'Priya Menon',
     role: 'Head of Partnerships',
-    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+    img: '/images/team-priya.jpg',
   },
   {
     name: 'Tom Gallagher',
     role: 'Guest Experience Lead',
-    img: 'https://images.unsplash.com/photo-1600486913747-55e5470d6f40?auto=format&fit=crop&w=400&q=80',
+    img: '/images/team-tom.jpg',
   },
 ];
 
@@ -87,7 +87,7 @@ export default function About() {
           <motion.div
             className="absolute inset-0 will-change-transform"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80')",
+              backgroundImage: "url('/images/about-hero.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               y: heroY,
@@ -129,7 +129,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2">
               <ImageReveal
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+                src="/images/team-meeting.jpg"
                 alt="Our team collaborating"
                 className="overflow-hidden rounded-2xl h-[50vh] md:h-[60vh]"
                 imgClassName="w-full h-full object-cover"
