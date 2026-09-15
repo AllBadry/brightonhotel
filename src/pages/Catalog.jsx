@@ -1,9 +1,11 @@
 // src/pages/Catalog.jsx
-import React, { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useMemo, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ReactLenis } from 'lenis/react';
-import rawHotelsData from '../data.json'; // تأكد أن اسم الملف هو data.json كما في كودك أو hotels.json
+import rawHotelsData from '../data.json';
 import HotelCard from '../components/HotelCard';
+
+const ease = [0.16, 1, 0.3, 1];
 
 const hotelsData = rawHotelsData.flat().filter((h, i, arr) =>
   arr.findIndex((x) => x.id === h.id) === i
@@ -24,18 +26,18 @@ const categories = ['All Properties', ...new Set(hotelsData.map((h) => getCatego
 // --- إعدادات الحركات الناعمة ---
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } 
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease }
   }
 };
 
-const staggerContainer = {
+const headerStagger = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.15 }
+    transition: { staggerChildren: 0.12 }
   }
 };
 
@@ -44,7 +46,7 @@ export default function Catalog() {
   const [sortBy, setSortBy] = useState('Recommended');
 
   const visibleHotels = useMemo(() => {
-    let list = hotelsData.filter((h) => 
+    let list = hotelsData.filter((h) =>
       typeFilter === 'All Properties' || getCategory(h.classification) === typeFilter
     );
 
@@ -65,19 +67,24 @@ export default function Catalog() {
   return (
     <ReactLenis root>
       <div dir="ltr" className="bg-warm min-h-screen font-sans text-sage pb-32">
-        
+
         {/* 1. Premium Editorial Header */}
-        <section className="pt-32 pb-12 px-8 md:px-16 max-w-7xl mx-auto border-b border-sage/10">
-          <motion.div 
-            initial="hidden" 
-            animate="visible" 
-            variants={staggerContainer}
+        <section className="pt-32 pb-12 px-8 md:px-16 max-w-7xl mx-auto border-b border-sage/10 overflow-hidden">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={headerStagger}
             className="max-w-4xl"
           >
             <motion.p variants={fadeUp} className="text-terracotta uppercase tracking-[0.2em] text-sm font-bold mb-6">
               The Collection
             </motion.p>
-            <motion.h1 variants={fadeUp} className="text-6xl md:text-8xl font-serif font-bold text-sage mb-8 tracking-tight">
+            <motion.h1
+              initial={{ clipPath: 'inset(0 0 100% 0)', y: 40 }}
+              animate={{ clipPath: 'inset(0 0 0% 0)', y: 0 }}
+              transition={{ duration: 1.1, delay: 0.1, ease }}
+              className="text-6xl md:text-8xl font-serif font-bold text-sage mb-8 tracking-tight"
+            >
               Directory.
             </motion.h1>
             <motion.p variants={fadeUp} className="text-xl text-gray-600 font-light leading-relaxed">
@@ -88,10 +95,10 @@ export default function Catalog() {
 
         {/* 2. Interactive Filter Bar */}
         <section className="py-8 px-8 md:px-16 max-w-7xl mx-auto sticky top-0 z-40 bg-warm/90 backdrop-blur-md border-b border-sage/5 mb-12">
-          <motion.div 
-            initial={{ opacity: 0, y: -10 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ delay: 0.6, duration: 0.8 }}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             className="flex flex-col md:flex-row justify-between items-center gap-4"
           >
             <div className="flex gap-4 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
@@ -114,7 +121,7 @@ export default function Catalog() {
                 <option value="Most Reviewed">Most Reviewed</option>
               </select>
             </div>
-            
+
             <div className="hidden md:block text-sm text-gray-500 font-medium">
               Scroll to explore ↓
             </div>
@@ -133,21 +140,23 @@ export default function Catalog() {
               No properties match this filter.
             </motion.p>
           ) : (
-            <div className="flex flex-col gap-10">
-              {visibleHotels.map((hotel, index) => (
-                <motion.div
-                  key={hotel.id || index}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-50px" }} // يبدأ الظهور قبل وصول العنصر لمنتصف الشاشة بقليل
-                  variants={fadeUp}
-                  whileHover={{ scale: 1.01, y: -4 }} // تأثير فيزيائي عند مرور الماوس
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                  className="transition-shadow hover:shadow-2xl rounded-2xl bg-white border border-gray-100"
-                >
-                  <HotelCard hotel={hotel} />
-                </motion.div>
-              ))}
+            <div className="flex flex-col gap-6">
+              <AnimatePresence mode="popLayout">
+                {visibleHotels.map((hotel, index) => (
+                  <motion.div
+                    key={hotel.id || index}
+                    layout
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.97 }}
+                    transition={{ duration: 0.55, delay: Math.min(index * 0.04, 0.5), ease }}
+                    whileHover={{ scale: 1.01, y: -4 }}
+                    className="transition-shadow hover:shadow-2xl rounded-2xl bg-white border border-gray-100"
+                  >
+                    <HotelCard hotel={hotel} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
             </div>
           )}
         </main>

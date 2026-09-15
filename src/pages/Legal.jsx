@@ -1,5 +1,4 @@
 // src/pages/Legal.jsx
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ReactLenis } from 'lenis/react';
 
@@ -21,9 +20,9 @@ function LegalLayout({ eyebrow, title, updated, children }) {
             {eyebrow}
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ clipPath: 'inset(0 0 100% 0)', y: 40 }}
+            animate={{ clipPath: 'inset(0 0 0% 0)', y: 0 }}
+            transition={{ duration: 1.1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="text-5xl md:text-7xl font-serif font-bold text-sage mb-6 tracking-tight"
           >
             {title}

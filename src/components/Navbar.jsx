@@ -1,20 +1,18 @@
 // src/components/Navbar.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring, useMotionValueEvent } from 'framer-motion';
 
 export default function Navbar() {
   const [isHidden, setIsHidden] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
-  const { scrollY } = useScroll();
+  const { scrollY, scrollYProgress } = useScroll();
+  const progressLine = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 });
   const location = useLocation();
 
-  // إغلاق قائمة الجوال تلقائياً عند تغيير الصفحة
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location.pathname]);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   // منع السكرول في الصفحة الخلفية عندما تكون قائمة الجوال مفتوحة
   useEffect(() => {
@@ -50,6 +48,12 @@ export default function Navbar() {
 
   return (
     <>
+      {/* شريط تقدم القراءة أعلى الشاشة */}
+      <motion.div
+        style={{ scaleX: progressLine }}
+        className="fixed top-0 left-0 right-0 h-[3px] origin-left z-[70] bg-gradient-to-r from-terracotta via-gold to-sage-light"
+      />
+
       {/* النافبار الرئيسي - تم رفع z-index إلى 60 ليبقى فوق القائمة */}
       <motion.header
         variants={{
@@ -146,12 +150,13 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 + idx * 0.1, duration: 0.5 }}
                 >
-                  <Link 
-                    to={link.path} 
-                    className="text-5xl font-serif font-bold text-sage hover:text-terracotta transition-colors"
-                  >
-                    {link.name}.
-                  </Link>
+<Link
+                      to={link.path}
+                      onClick={closeMobileMenu}
+                      className="text-5xl font-serif font-bold text-sage hover:text-terracotta transition-colors"
+                    >
+                      {link.name}.
+                    </Link>
                 </motion.div>
               ))}
               
@@ -160,8 +165,9 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
               >
-                <Link 
-                  to="/contact" 
+<Link
+                  to="/contact"
+                  onClick={closeMobileMenu}
                   className="text-5xl font-serif font-bold text-terracotta transition-colors"
                 >
                   Contact.

@@ -4,7 +4,41 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-warm text-gray-800 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-terracotta/30 text-sage;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-warm;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-sage/30;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-sage/50;
+  }
+
+  .perspective-deep {
+    perspective: 1400px;
+  }
+
+  .text-balance {
+    text-balance: balance;
   }
 }
